@@ -1,0 +1,31 @@
+name: Release
+
+# Allow to trigger this workflow manually and enter a release version to release
+# See: https://github.blog/changelog/2020-07-06-github-actions-manual-triggers-with-workflow_dispatch/
+on:
+  workflow_dispatch:
+    inputs:
+      releaseVersion:
+        description: "Release tag version"
+        required: true
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v2
+        with:
+          ref: "master"
+          fetch-depth: 0
+      - uses: oleksiyrudenko/gha-git-credentials@v1
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - name: Release version
+        run: npx -p @release-it/bumper -p release-it@13.6.2 release-it --verbose ${{ github.event.inputs.releaseVersion }}
+        env:
+          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
