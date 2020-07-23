@@ -20,11 +20,6 @@ jobs:
         run: |
           curl -OL https://sketch.com/download/sketch.zip
           unzip sketch.zip
-      - name: Install Inter font
-        run: |
-          curl -L -o Inter.zip https://github.com/rsms/inter/releases/download/v3.13/Inter-3.13.zip
-          unzip Inter.zip
-          cp Inter\ Desktop/*.otf /Library/Fonts/
       - name: Cleanup assets
         run: rm -rf images/* Tailwind\ CSS.pdf || true
       - name: Generate artboard previews with Sketchtool
