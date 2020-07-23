@@ -23,11 +23,11 @@ jobs:
       - name: Cleanup assets
         run: rm -rf images/* Tailwind\ CSS.pdf || true
       - name: Generate artboard previews with Sketchtool
-        run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export artboards --output=images --formats=png --scales=2 *.sketch
+        run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export artboards --output=images --formats=png --scales=2 --overwriting=YES *.sketch
       - name: Generate a page preview with Sketchtool
-        run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export preview --output=images --filename="preview.png" --max-size=2000 *.sketch
+        run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export preview --output=images --filename="preview.png" --max-size=2000 --overwriting=YES *.sketch
       - name: Generate PDF page export with Sketchtool
-        run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export pages --item="Tailwind CSS" --formats=pdf --scales=2 *.sketch
+        run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export pages --item="Tailwind CSS" --formats=pdf --scales=2 --overwriting=YES *.sketch
       - name: Push assets to git
         run: |
           ls -al images/
