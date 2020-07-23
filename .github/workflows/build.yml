@@ -1,5 +1,6 @@
 name: Build
 
+# Only execute if our Sketch file has changed
 on:
   push:
     branches:
@@ -8,16 +9,27 @@ on:
       - "**.sketch"
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
+  generate-assets:
+    runs-on: "macos-latest"
     steps:
       - uses: actions/checkout@v2
       - uses: oleksiyrudenko/gha-git-credentials@v1
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
-      - name: Build
+      - name: Download & Install Sketch
         run: |
-          sudo mv /etc/ImageMagick-6/policy.xml /etc/ImageMagick-6/policy.xml.off
-          ./generate-previews.sh
+          curl -OL https://sketch.com/download/sketch.zip
+          unzip sketch.zip
+      - name: Cleanup assets
+        run: rm -rf images/* Tailwind\ CSS.pdf || true
+      - name: Generate artboard preview with Sketchtool
+        run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export artboards --output=images --formats=png *.sketch
+      - name: Generate page preview with Sketchtool
+        run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export pages --item="Tailwind CSS" --output=images *.sketch
+      - name: Generate PDF page export with Sketchtool
+        run: Sketch.app/Contents/Resources/sketchtool/bin/sketchtool export pages --item="Tailwind CSS" --formats=pdf *.sketch
+      - name: Push assets to git
+        run: |
           ls -al images/
-          git add images/* && git commit -m "🎨 Update preview images" && git push
+          git add images/* Tailwind\ CSS.pdf
+          git commit -m "🎨 Update preview assets" && git push
