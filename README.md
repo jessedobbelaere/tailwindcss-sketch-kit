@@ -22,6 +22,11 @@
 - A `.sketchpalette` colors file available for the [Sketch Palettes plugin](https://github.com/andrewfiorillo/sketch-palettes).
 - Icons included: [Heroicons UI by Steve Schoger and Adam Wathan](https://github.com/refactoringui/heroicons)
 
+### To do:
+
+- Forms
+- Grid/spacing
+
 ## Changelog
 
 Check out the [CHANGELOG](CHANGELOG.md) in this repository for all the recent changes.
