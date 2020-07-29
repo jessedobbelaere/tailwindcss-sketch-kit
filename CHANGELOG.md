@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.0.3](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/compare/0.0.2...0.0.3) (2020-07-29)
+
+- 🎨 Fix page preview generation by using @2x [`a3d5728`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/a3d5728ac5c4bde7e46a9f1db5ea12689d570e64)
+- 💄 Add container, grid and input fields [`4346c18`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/4346c1813af4b6fef90a7c4f8b962f3d0c61c00f)
+- 💄 Embed Inter font in Sketchfile [`fca493b`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/fca493b9b12a6ffee1468cddf80da6ae3f88b0d3)
+- 🐛 Fix correct increment for release version [`66545e9`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/66545e9d80d022b8b96a62a939b77bae92979277)
+- 🎨 Update preview assets [`d3729d8`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/d3729d8919c3fa0f669c62e0852e9de3afde1262)
+- 🎨 Add example form elements [`11c0854`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/11c085488e3c8c1146812c6fa0b676c7adad4e49)
+- 🎨 Update preview assets [`007d7cd`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/007d7cdafcaaa48a7465d77678f9aa38d5b5d35b)
+- 🎨 Update preview assets [`4c3a10e`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/4c3a10e74ca4d8cd7e1a390ce5dfec646bca2d35)
+- 🎨 Update preview assets [`ce76dd5`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/ce76dd5d5ac4829192277cd7e6a437f4145352d1)
+
 ## [0.0.2](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/compare/0.0.1...0.0.2) (2020-07-23)
 
 - 🔖 Test automated releases [`ba36922`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/ba36922f35b08ccd07d1abc32c853638f49bd145)
