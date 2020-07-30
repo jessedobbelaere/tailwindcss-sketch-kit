@@ -17,7 +17,7 @@
 
 ## Features
 
-- All default Tailwind CSS colors available (document colors/layer styles), typography styles, shadows and button symbols.
+- All default Tailwind CSS colors available (document colors/layer styles), typography styles, shadows, button, spacers/containers and basic form symbols.
 - Uses the [Inter font](https://github.com/rsms/inter) as used frequently in e.g. TailwindUI
 - A `.sketchpalette` colors file available for the [Sketch Palettes plugin](https://github.com/andrewfiorillo/sketch-palettes).
 - Icons included: [Heroicons UI by Steve Schoger and Adam Wathan](https://github.com/refactoringui/heroicons)
