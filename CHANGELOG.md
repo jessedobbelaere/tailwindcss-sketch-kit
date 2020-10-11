@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.0.0](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/compare/0.0.3...1.0.0)
+
+- 📝 Remove Todo from README.md [`34fabf0`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/34fabf0d8baef3fbd462352587311411c373591b)
+- 📝 Remove Todo from README.md [`48aa889`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/48aa8892b42cd387529d2c10fa89583a50a30ecc)
+- 🎨 Update preview assets [`4522519`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/4522519dc95c7a30def9fc66a5e30a2bf0d35a22)
+- 💎 Introduce Sketch 69 support with Color Variables [`790f726`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/790f726e87f35f0138fc24049e794dd9c99a4855)
+- 🎨 Update preview assets [`2233cf8`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/2233cf836548f5c676260e5b04561af15b4d9979)
+- ✨ Add brand new Heroicons [`c16499a`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/c16499aa8bbb91b5bf2811c84474f2ab1578dd07)
+
 ## [0.0.3](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/compare/0.0.2...0.0.3) (2020-07-29)
 
 - 🎨 Fix page preview generation by using @2x [`a3d5728`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/a3d5728ac5c4bde7e46a9f1db5ea12689d570e64)
