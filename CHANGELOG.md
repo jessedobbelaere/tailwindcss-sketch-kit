@@ -1,6 +1,11 @@
 # Changelog
 
-## [1.0.0](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/compare/0.0.3...1.0.0)
+## [2.0.0](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/compare/1.0.0...2.0.0)
+
+- ✨ Update Tailwind sketch resources to v2 [`c5f181d`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/c5f181d247cd26b284dfff627ee20358fa208e45)
+- 🎨 Update preview assets [`62f576b`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/62f576b4e8942db684932e01afd39954343ece75)
+
+## [1.0.0](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/compare/0.0.3...1.0.0) (2020-10-11)
 
 - 📝 Remove Todo from README.md [`34fabf0`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/34fabf0d8baef3fbd462352587311411c373591b)
 - 📝 Remove Todo from README.md [`48aa889`](https://github.com/jessedobbelaere/tailwindcss-sketch-kit/commit/48aa8892b42cd387529d2c10fa89583a50a30ecc)
