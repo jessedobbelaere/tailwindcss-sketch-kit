@@ -15,10 +15,12 @@
   <a href="https://github.com/jessedobbelaere/tailwindcss-sketch-kit/raw/master/Tailwind%20CSS.sketch"><img alt="Preview Sketch UI Kit for Tailwind CSS" src="images/preview.png" /></a>
 </kbd>
 
+🔎 See a [detailed preview of the artboards](images/preview.pdf)
+
 ## Features
 
-- All default Tailwind CSS colors available (document colors/layer styles), typography styles, shadows, button, spacers/containers and basic form symbols.
-- Uses the [Inter font](https://github.com/rsms/inter) as used frequently in e.g. TailwindUI
+- [All Tailwind v2 CSS colors available](https://tailwindcss.com/docs/customizing-colors#color-palette-reference), typography styles, shadows, button, spacers/containers and basic form symbols.
+- Uses the [Inter font](https://github.com/rsms/inter) as used frequently, e.g. in [TailwindUI](https://tailwindui.com/).
 - A `.sketchpalette` colors file available for the [Sketch Palettes plugin](https://github.com/andrewfiorillo/sketch-palettes).
 - Icons included: [Heroicons UI by Steve Schoger and Adam Wathan](https://github.com/refactoringui/heroicons)
 

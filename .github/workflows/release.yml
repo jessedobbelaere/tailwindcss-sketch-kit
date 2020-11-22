@@ -18,7 +18,7 @@ jobs:
         with:
           ref: "master"
           fetch-depth: 0
-      - uses: oleksiyrudenko/gha-git-credentials@v1
+      - uses: oleksiyrudenko/gha-git-credentials@v2
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
       - name: Use Node.js
@@ -26,6 +26,6 @@ jobs:
         with:
           node-version: 14
       - name: Release version
-        run: npx -p @release-it/bumper -p release-it@13.6.2 release-it --verbose --increment ${{ github.event.inputs.releaseVersion }}
+        run: npx -p @release-it/bumper@2.0.0 -p release-it@14.2.1 release-it --verbose --increment ${{ github.event.inputs.releaseVersion }}
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
